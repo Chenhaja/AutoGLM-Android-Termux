@@ -668,7 +668,7 @@ def main():
     )
 
     if args.android_mode:
-        androidCommunication = AndroidCommunication(args.shared, args.poll_interval)
+        androidCommunication = AndroidCommunication(args.shared_dir, args.poll_interval)
         androidCommunication.monitor_commands(agent)
         return
 
