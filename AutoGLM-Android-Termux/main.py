@@ -15,10 +15,12 @@ Environment Variables:
 
 import argparse
 import os
+import time
 import shutil
 import subprocess
 import sys
 from urllib.parse import urlparse
+from pathlib import Path
 
 from openai import OpenAI
 
@@ -484,7 +486,7 @@ class AndroidCommunication:
 
     def __init__(self, base_dir: str, poll_interval: float = 0.5):
         """
-        Initialize Ubuntu communication.
+        Initialize Android communication.
 
         Args:
             base_dir: Base directory for communication files
@@ -507,7 +509,7 @@ class AndroidCommunication:
         self.task_result = None
         self.is_running = True
 
-        print(f"Ubuntu communication initialized:")
+        print(f"Android communication initialized:")
         print(f"  Command file: {self.command_file}")
         print(f"  Status file: {self.status_file}")
         print(f"  Poll interval: {poll_interval}s")
@@ -568,7 +570,7 @@ class AndroidCommunication:
         Args:
             agent: PhoneAgent instance to execute tasks
         """
-        print("\n📱 Starting Ubuntu communication mode...")
+        print("\n📱 Starting Android communication mode...")
         print("  - Waiting for commands from command.txt")
         print("  - Writing status to status.txt")
         print("  - Press Ctrl+C to exit\n")
@@ -615,14 +617,14 @@ class AndroidCommunication:
                 time.sleep(self.poll_interval)
 
             except KeyboardInterrupt:
-                print("\n🛑 Ubuntu communication mode stopped by user")
+                print("\n🛑 Android communication mode stopped by user")
                 self.is_running = False
                 break
             except Exception as e:
                 print(f"Error in monitor loop: {e}")
                 time.sleep(self.poll_interval)
 
-        self.write_status("STOPPED", "Ubuntu communication stopped")
+        self.write_status("STOPPED", "Android communication stopped")
 
 def main():
     """Main entry point."""
