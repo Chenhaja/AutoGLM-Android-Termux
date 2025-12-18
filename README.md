@@ -93,6 +93,6 @@ python main.py --base-url https://open.bigmodel.cn/api/paas/v4 --model "autoglm-
 应用通过 adb 实现控制功能，需依赖手机的无线调试功能，因此仅支持在 WiFi 环境下运行，但不受 adb 连接范围限制。
 
 **3. 演示视频**
+https://github.com/user-attachments/assets/73f33e14-3604-4ae3-965b-746e9e74a5cb
 
-<video src="resources/5cf9ea8dd895712408a136085d835178.mp4"></video>
 
