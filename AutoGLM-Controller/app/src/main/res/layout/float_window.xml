@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="60dp">
+
+    <!-- 悬浮窗主体（半透明线条） -->
+    <View
+        android:layout_width="10dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="#800080FF"
+        android:elevation="8dp" />
+
+    <!-- 录音动画视图 -->
+    <ImageView
+        android:id="@+id/record_animation"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/record_animation"
+        android:visibility="gone" />
+
+</FrameLayout>
