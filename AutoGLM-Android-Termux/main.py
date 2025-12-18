@@ -396,8 +396,8 @@ Examples:
     parser.add_argument(
         "--shared-dir",
         type=str,
-        default=os.path.expanduser("~/storage/shared/UbuntuAndroid"),
-        help="Directory for android shared files (default: ~/storage/shared/UbuntuAndroid)",
+        default=os.path.expanduser("/data/data/com.termux/files/home/storage/shared/UbuntuAndroid"),
+        help="Directory for android shared files (default: /data/data/com.termux/files/home/storage/shared/UbuntuAndroid)",
     )
 
     parser.add_argument(
