@@ -86,7 +86,7 @@ python main.py --base-url https://open.bigmodel.cn/api/paas/v4 --model "autoglm-
 - 在 `SpeechApplication` 中填写个人 appID（注意保留符号 `"="`）；
 - 上传对应 SDK 文件（包括`Msc.jar`及`Jnilibs`目录下的`.so`文件）。
 
-![image-20251218101510245](asset\image-20251218101510245.png)
+![image-20251218101510245](asset/image-20251218101510245.png)
 
 **2. 运行环境说明**
 
@@ -94,5 +94,5 @@ python main.py --base-url https://open.bigmodel.cn/api/paas/v4 --model "autoglm-
 
 **3. 演示视频**
 
-<video src="asset\5cf9ea8dd895712408a136085d835178.mp4"></video>
+<video src="asset/5cf9ea8dd895712408a136085d835178.mp4"></video>
 
